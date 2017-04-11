@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: bold 18px;
+}
+		#calculator{
+			background: red;
+			width: 288px;
+			height: auto;
+			background: linear-gradient(#5CD6EF,#31B0C9);
+			margin: 100px auto;
+			padding: 10px;
+		}
+		#result{
+			background: #696969;
+			height: 40px;
+			margin: 5px;
+			background: white;
+			border: 3px inset #808080;
+		}
+		#calculator #key{
+			margin: 0px 7px;
+		}
+		#calculator #key span.button{
+			display: inline-block;
+			background: #E5FCFB;
+			box-shadow: -2px 2px 4px black;
+			width: 40px;
+			margin: 0px 5px 10px 0px;
+			padding: 10px;
+			text-align: center;
+			cursor: pointer;
+      background-image: -webkit-radial-gradient(45px 45px, circle cover, gray, white);
+      background-image: -moz-radial-gradient(45px 45px, circle cover, gray, white);
+      background-image: radial-gradient(45px 45px, circle cover, gray, white);
+      border-radius: 50%;
+		}
+
+#seven  {
+	top: 86px;
+	left: 15px;
+	background: url(../img/testgrn.jpg) no-repeat;
+	cursor: pointer;
+}
+
+
+/** {
+  margin: 0; padding: 0;
+}
+body  {
+  font: 25px "Arial Black", Arial, Sans-Serif;
+}
+#page-wrap {
+   width: 500px;
+   margin: 25px auto;
+}
+
+h1 { font-size: 22px; }
+p  { font: 14px Arial, Sans-Serif; }
+a  { color: black; text-decoration: none; outline: none; }
+
+#calculator  {
+  width: 317px;
+  height: 453px;
+  background: url(../img/calulator.jpg) no-repeat;
+  position: relative;
+  <!--display: none;
+}
+
+#display  {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 197px;
+  text-align: right;
+  font: 35px "Arial Black", Arial, Sans-Serif;
+}
+
+.num-button {
+  width: 60px;
+  height: 56px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background: url(../img/lightpurple.jpg) no-repeat;
+  position: absolute;
+  display: block;
+}
+.clear-button {
+   width: 60px;
+   height: 56px;
+   padding: 10px 0 0 0;
+   text-align: center;
+   background: url(../img/lightpurple.jpg) no-repeat;
+   position: absolute;
+   display: block;
+   top: 278px;
+   left: 79px;
+  }
+.function-button  {
+  width: 60px;
+  height: 56px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  background: url(../img/darkerbutton.jpg) no-repeat;
+  position: absolute;
+  display: block;
+ }
+.function-button:active,
+.pendingFunction { background-position: bottom left; }
+
+.seven  { top: 86px; left: 15px; }
+.eight  { top: 86px; left: 79px; }
+.nine   { top: 86px; left: 143px; }
+.four   { top: 150px; left: 15px; }
+.five   { top: 150px; left: 79px; }
+.six    { top: 150px; left: 143px; }
+.one   { top: 214px; left: 15px; }
+.two   { top: 214px; left: 79px; }
+.three    { top: 214px; left: 143px; }
+.zero   { top: 278px; left: 15px; }
+/* ... the rest of the buttons ... */
+
+/*.multiply  { top: 150px; left: 207px; }
+.divide    { top: 213px; left: 207px; }
+.add       { top: 278px; left: 207px; }
+.subtract  { top: 86px;  left: 207px; }
+.dot      { top: 278px; left: 143px; }
+
+.equals-button {
+   width: 124px;
+   height: 53px;
+   text-align: center;
+   top: 376px;
+   left: 79px;
+   background: url(../img/equalbtn.jpg) no-repeat;
+   position: absolute;
+   display: block;
+ }
+*/
