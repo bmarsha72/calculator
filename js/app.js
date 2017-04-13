@@ -41,10 +41,7 @@ window.onload = function() {
 
                 var memorypull = memory.reduce(add, 0);
                 console.log(memorypull);
-
-
-
-
+                screen.innerHTML = memorypull;
 
               }else{
   							result += this.innerHTML
@@ -82,11 +79,5 @@ window.onload = function() {
                   //div.style.top = e.clientY + 'px';
                   //div.style.left = e.clientX + 'px';
           }
-
-
-
-
-
-
 
 };
