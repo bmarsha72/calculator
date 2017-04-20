@@ -5,23 +5,25 @@ window.onload = function() {
 
   //handles the result
   var screen = document.getElementById("result");
-  				var elem = document.querySelectorAll("span.button");
-  				var result = "";
-          var memory = [];
-          //testObject.id = id;
+	var elem = document.querySelectorAll("span.button");
+	var result = "";
+  var memory = [];
+        //testObject.id = id;
 
   				for(var i=0;i<elem.length;i++){
+
   					elem[i].addEventListener("click",function(){
   						if(this.innerHTML=='='){
   							result = eval(screen.innerHTML);
-
   							screen.innerHTML = result;
-  						}else if(this.innerHTML == 'C'){
+
+  						}
+              else if(this.innerHTML == 'C'){
   							result="0";
   							screen.innerHTML = result;
 
-  						}else if(this.innerHTML == 'M+'){
-
+  						}
+              else if(this.innerHTML == 'M+'){
                 var string = screen.innerHTML;
                 var parsestring = parseInt(string);
                 //memory.parseint(screen.innerHTML)
@@ -29,32 +31,40 @@ window.onload = function() {
                 console.log(memory);
 
               }
+              else if(this.innerHTML == '+/-'){
+                screen.innerHTML = reversepolarity(result);
+              }
               else if (this.innerHTML == 'M-'){
-
                 memory.pop(screen.innerHTML);
                 console.log(memory);
-                //for (i=0; i < memory.length; i++){
-                //  memory.delete[i];
-                //}
 
-              }else if (this.innerHTML == 'MRC'){
-
+              }
+              else if (this.innerHTML == 'MRC'){
                 var memorypull = memory.reduce(add, 0);
                 console.log(memorypull);
                 screen.innerHTML = memorypull;
 
-              }else{
+              }else if (memorypull != null){
   							result += this.innerHTML
-  							screen.innerHTML = result;
+  							screen.innerHTML = result + memorypull.toString();
+                console.log(memorypull);
 
-  						}
+  						}else{
+                result += this.innerHTML
+                screen.innerHTML = result;
+                console.log(result);
+              }
+
   					});
 
       function add(a, b) {
           return a + b;
       }
 
-  				}
+      function reversepolarity(n){
+         return (n * -1).toString();
+      }
+    }//end of for loop
 
           //window.onload = addListeners;
 
